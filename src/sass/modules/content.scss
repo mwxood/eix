@@ -1,0 +1,133 @@
+.about {
+    margin-bottom: 100px;
+}
+
+h1, .h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    .heading-top {
+        font-size: 20px;
+        display: inline-block;
+        border-bottom: 1px solid #2980b9; 
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        min-width: 100px;
+        text-transform: uppercase;
+    }
+    .title {
+        display: block;
+    }
+}
+
+.about-content {
+    margin-bottom: 80px;
+}
+
+.traiding-platform {
+    padding: 60px;
+    background: #fff;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    max-width: 800px;
+    margin: auto;
+    @extend .d-flex;
+    @extend .justify-content-center;
+    flex-wrap: wrap;
+    img {
+        width: 300px;
+    }
+
+    .traiding-logo {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+.trader {
+    background: #ecf0f1;
+    padding: 80px 0;
+    margin-bottom: 100px;
+    .h1 {
+        margin-bottom: 50px;
+    }
+}
+
+.btn-primary {
+        background: #8360c3; 
+        background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  
+        background: linear-gradient(to right, #2ebf91, #8360c3); 
+        padding: 20px 30px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+            background: #8360c3; 
+        }
+}
+
+.page-404 {
+    background: #8e2de2;
+    background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0);
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: #fff;
+    @extend .d-flex;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+    h1 {
+        font-size: 200px;
+        font-weight: 800;
+    }
+}
+
+.page-alert {
+    @extend .d-flex;
+    @extend .justify-content-center;
+    flex-wrap: wrap;
+    hgroup {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    a {
+        color: #fff;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        margin-bottom: 30px;
+        &:nth-child(even) {
+            flex-direction: column-reverse;
+        }
+
+        .image {
+            margin-top: 30px;
+            display: block;
+        }
+    }
+
+    .page-404 { 
+        h1 {
+            font-size: 80px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    h1, .h1 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    h1 .heading-top, .h1 .heading-top {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-404 { 
+        h1 {
+            font-size: 30px;
+        }
+    }
+}
